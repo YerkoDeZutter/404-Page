@@ -49,6 +49,7 @@ a:hover{
   z-index: -1;
   left: 50%;
   background-color: #fff;
+  animation: ballFlick ease alternate infinite;
 }
 
 .ball:nth-of-type(1){
@@ -56,6 +57,8 @@ a:hover{
   height: 200px;
   top: 50px;
   margin-left: -230px;
+  animation-delay: 2s;
+  animation-duration: 2s;
 }
 
 .ball:nth-of-type(2){
@@ -63,6 +66,7 @@ a:hover{
   height: 150px;
   top: 150px;
   margin-left: -100px;
+  animation-duration: 3s;
 }
 
 .ball:nth-of-type(3){
@@ -70,6 +74,8 @@ a:hover{
   height: 250px;
   top: 50px;
   margin-left: 0px;
+  animation-delay: .8s;
+  animation-duration: 1.5s;
 }
 
 .ball:nth-of-type(4){
@@ -77,4 +83,21 @@ a:hover{
   height: 180px;
   top: 270px;
   margin-left: -90px;
+  animation-delay: 2.4s;
+  animation-duration: 2.5s;
+}
+
+
+
+
+/*animation*/
+
+@keyframes ballFlick {
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
 }
