@@ -27,13 +27,13 @@ h1{
   border-radius: 50%;
   position: absolute;
   z-index: -1;
+  left: 50%;
+  background-color: #fff;
 }
 
 .ball:nth-of-type(1){
   width: 200px;
   height: 200px;
-  background-color: #fff;
   top: 50px;
-  left: 50%;
   margin-left: -230px;
 }
